@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maître Hnia Bennane - Avocate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .active-section {
+            color: #0e7490 !important; /* turquoise foncé */
+            font-weight: 600;
+        }
+        /* Custom colors for turquoise/vert-bleu palette */
+        :root {
+            --color-primary: #0e7490; /* turquoise foncé */
+            --color-primary-light: #38bdf8; /* bleu clair */
+            --color-primary-dark: #075985; /* bleu foncé */
+            --color-secondary: #166534; /* vert foncé */
+            --color-bg-light: #e0f2fe; /* bleu très clair */
+            --color-bg: #f0fdfa; /* vert très clair */
+        }
+    </style>
+</head>
+<body class="bg-[var(--color-bg-light)] text-gray-800">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-[var(--color-primary)] heading-font">Maître Hnia Bennane</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="nav-link hover:text-[var(--color-primary-dark)] transition">Accueil</a>
+                    <a href="#about" class="nav-link hover:text-[var(--color-primary-dark)] transition">À propos</a>
+                    <a href="#services" class="nav-link hover:text-[var(--color-primary-dark)] transition">Services</a>
+                    <a href="#contact" class="nav-link hover:text-[var(--color-primary-dark)] transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-[var(--color-primary)]">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4">
+                <a href="#accueil" class="block py-2 hover:text-[var(--color-primary-dark)] transition nav-link">Accueil</a>
+                <a href="#about" class="block py-2 hover:text-[var(--color-primary-dark)] transition nav-link">À propos</a>
+                <a href="#services" class="block py-2 hover:text-[var(--color-primary-dark)] transition nav-link">Services</a>
+                <a href="#contact" class="block py-2 hover:text-[var(--color-primary-dark)] transition nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page d'accueil -->
+    <section
+        id="accueil"
+        class="min-h-screen pt-24 pb-16 flex flex-col items-center justify-center bg-[var(--color-bg)] text-[var(--color-primary-dark)]"
+    >
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h1 class="text-5xl font-bold mb-6 heading-font">Maître Hnia Bennane</h1>
+            <p class="text-xl text-[var(--color-primary)] mb-8 leading-relaxed">
+                Avocate spécialisée offrant une expertise juridique complète pour défendre vos droits et résoudre vos litiges avec professionnalisme et dévouement.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a
+                    href="#contact"
+                    class="bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white px-8 py-3 rounded-lg transition"
+                    >Prendre rendez-vous</a
+                >
+                <a
+                    href="#services"
+                    class="border border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary-light)] hover:text-white px-8 py-3 rounded-lg transition"
+                    >Nos services</a
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- Page À propos -->
+    <section id="about" class="py-20 bg-[var(--color-bg-light)] text-[var(--color-primary-dark)]">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center mb-12 heading-font">À propos de moi</h2>
+            <div class="max-w-3xl mx-auto space-y-8 text-lg leading-relaxed">
+                <p>
+                    Avec une expérience solide et diversifiée dans le domaine juridique, Maître Hnia Bennane s'est établie comme une avocate de confiance, dévouée à la défense des droits de ses clients. Sa formation approfondie et son expertise couvrent l'ensemble des domaines du droit.
+                </p>
+                <p>
+                    Diplômée d'une prestigieuse faculté de droit, elle a développé au fil des années une approche personnalisée pour chaque dossier, alliant rigueur juridique et écoute attentive des besoins spécifiques de ses clients.
+                </p>
+                <p>
+                    Spécialisée dans tous les types d'affaires juridiques, Maître Bennane offre un accompagnement complet, du conseil à la représentation en justice, en veillant toujours à garantir les meilleurs résultats possibles pour ceux qui lui font confiance.
+                </p>
+                <div class="bg-[var(--color-bg)] p-6 rounded-lg border-l-4 border-[var(--color-secondary)]">
+                    <h3 class="text-2xl font-semibold mb-2 text-[var(--color-secondary)]">Expertise générale</h3>
+                    <p>Intervention dans toutes les branches du droit pour une assistance juridique complète et adaptée à chaque situation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Services -->
+    <section id="services" class="py-20 bg-[var(--color-bg)] text-[var(--color-primary-dark)]">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-4 heading-font">Nos services juridiques</h2>
+            <p class="text-center text-[var(--color-primary)] mb-12 max-w-3xl mx-auto text-lg">
+                Une gamme complète de services juridiques pour répondre à tous vos besoins, avec expertise et professionnalisme.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Droit Civil -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-2xl font-semibold mb-4 text-[var(--color-primary)]">Droit Civil</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Droit des contrats</li>
+                        <li>Droit de la famille</li>
+                        <li>Droit des successions</li>
+                        <li>Droit des obligations</li>
+                        <li>Responsabilité civile</li>
+                    </ul>
+                </div>
+
+                <!-- Droit Pénal -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-2xl font-semibold mb-4 text-[var(--color-primary)]">Droit Pénal</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Défense pénale</li>
+                        <li>Droit criminel</li>
+                        <li>Délits et contraventions</li>
+                        <li>Procédure pénale</li>
+                        <li>Assistance aux victimes</li>
+                    </ul>
+                </div>
+
+                <!-- Droit Commercial -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-2xl font-semibold mb-4 text-[var(--color-primary)]">Droit Commercial</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Droit des sociétés</li>
+                        <li>Droit de la concurrence</li>
+                        <li>Droit bancaire</li>
+                        <li>Propriété intellectuelle</li>
+                        <li>Contrats commerciaux</li>
+                    </ul>
+                </div>
+
+                <!-- Droit Immobilier -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-2xl font-semibold mb-4 text-[var(--color-primary)]">Droit Immobilier</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Transactions immobilières</li>
+                        <li>Baux et locations</li>
+                        <li>Copropriété</li>
+                        <li>Urbanisme et construction</li>
+                        <li>Litiges immobiliers</li>
+                    </ul>
+                </div>
+
+                <!-- Droit du Travail -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-2xl font-semibold mb-4 text-[var(--color-primary)]">Droit du Travail</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Contrats de travail</li>
+                        <li>Licenciement</li>
+                        <li>Droit syndical</li>
+                        <li>Harcèlement au travail</li>
+                        <li>Conseils aux entreprises</li>
+                    </ul>
+                </div>
+
+                <!-- Autres domaines -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-2xl font-semibold mb-4 text-[var(--color-primary)]">Autres domaines</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Droit administratif</li>
+                        <li>Droit international</li>
+                        <li>Droit fiscal</li>
+                        <li>Médiation et arbitrage</li>
+                        <li>Conseil juridique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Contact -->
+    <section id="contact" class="py-20 bg-[var(--color-bg-light)] text-[var(--color-primary-dark)]">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-4 heading-font">Contactez-moi</h2>
+            <p class="text-center text-[var(--color-primary)] mb-12 text-lg">
+                Prenez rendez-vous pour une consultation ou posez vos questions. Je suis à votre disposition pour vous accompagner dans vos démarches juridiques.
+            </p>
+
+            <form id="contact-form" class="space-y-6 bg-white p-8 rounded-lg shadow-md">
+                <div>
+                    <label for="name" class="block text-gray-700 mb-2">Nom complet</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
+                    />
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 mb-2">Adresse email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
+                    />
+                </div>
+                <div>
+                    <label for="phone" class="block text-gray-700 mb-2">Numéro de téléphone</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
+                    />
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 mb-2">Votre message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
+                    ></textarea>
+                </div>
+                <button
+                    type="submit"
+                    class="w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white py-3 px-6 rounded-lg transition"
+                >
+                    Envoyer le message
+                </button>
+            </form>
+
+            <div class="mt-12 bg-[var(--color-bg)] p-8 rounded-lg border-l-4 border-[var(--color-secondary)] text-[var(--color-primary-dark)]">
+                <h3 class="text-2xl font-semibold mb-6">Coordonnées</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-semibold">Téléphone</h4>
+                        <a href="tel:+21252228486" class="text-[var(--color-primary)] hover:underline">+212 522 28 48 86</a>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Email</h4>
+                        <a href="mailto:Hniabennane@gmail.com" class="text-[var(--color-primary)] hover:underline">Hniabennane@gmail.com</a>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Adresse</h4>
+                        <p>Casablanca, Maroc</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Horaires</h4>
+                        <p>Du lundi au vendredi: 9h-18h</p>
+                        <p>Sur rendez-vous</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--color-primary-dark)] text-white py-12">
+        <div class="container mx-auto px-6 max-w-6xl flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold heading-font">Maître Hnia Bennane</h3>
+                <p class="text-[var(--color-bg-light)] mt-2">Avocate - Tous domaines du droit</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#accueil" class="hover:text-[var(--color-bg-light)] transition">Accueil</a>
+                <a href="#about" class="hover:text-[var(--color-bg-light)] transition">À propos</a>
+                <a href="#services" class="hover:text-[var(--color-bg-light)] transition">Services</a>
+                <a href="#contact" class="hover:text-[var(--color-bg-light)] transition">Contact</a>
+            </div>
+        </div>
+        <div class="border-t border-[var(--color-primary)] mt-8 pt-8 text-center text-[var(--color-bg-light)]">
+            <p>© 2023 Maître Hnia Bennane. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation active state and mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            function updateActiveNavLink() {
+                let current = '';
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    link.classList.remove('active-section');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active-section');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveNavLink);
+            updateActiveNavLink();
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth',
+                        });
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // Contact form submission using mailto
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email
